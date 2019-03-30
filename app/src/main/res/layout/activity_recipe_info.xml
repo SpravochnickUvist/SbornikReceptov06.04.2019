@@ -15,10 +15,11 @@
         android:textSize="22sp" />
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/receptImageView"
         android:layout_width="match_parent"
         android:layout_height="150dp"
-        app:srcCompat="@android:color/holo_orange_light" />
+        android:scaleType="center"
+        app:srcCompat="@drawable/grenki" />
 
     <TextView
         android:id="@+id/textViewOpis"
@@ -26,4 +27,16 @@
         android:layout_height="wrap_content"
         android:text="Описание"
         android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ингредиенты:" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerViewNameIngredient"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
 </LinearLayout>

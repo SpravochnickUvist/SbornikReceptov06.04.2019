@@ -53,5 +53,10 @@ public class Recept {
     public void setEtapi(ArrayList<Etap> etapi) {
         this.etapi = etapi;
     }
+
+    @Override
+    public String toString(){
+        return this.name;
+    }
 }
 
